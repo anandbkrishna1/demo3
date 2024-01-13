@@ -1,0 +1,497 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+  <style>
+    main{
+        height: 100svh;
+        width: 100vw;
+    }
+    .head-nav{
+        width: 100vw;
+        height: 3vh;
+        background-color: black;
+        /* display: flex; */
+        /* color: white; */
+        
+    }
+    .Announcement_bar{
+        color: white;
+        align-items: center;
+        /* margin-right: 50px; */
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between; 
+        box-sizing: border-box;
+        width: 100vw;
+        height: 55px;
+        background-color: white;
+        align-items: center;
+      
+    
+    }
+    .options{
+        display: flex;
+        color: black;
+        margin-right: 10rem;
+        font-size: 20px;
+        margin-top: 12px;
+        
+    }
+    .o{
+        margin-top: 20px;
+        margin-right: 3rem; 
+    }
+    .o:hover{
+        color: red;
+    }
+    
+    .d-flex{
+        margin-top: 18px;
+        margin-left: 5rem;
+    }
+    .form-control{
+        width: 650px;
+    }
+    .sub-nav{
+        position: relative;
+        display: flex;
+        width: 100vw;
+        height: 70px;
+        /* background-color: aqua; */
+        align-items: center ;
+    }
+    .spans{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 1px;
+    }
+    .a{
+        padding: 3rem;
+      }
+      
+      .a:hover{
+          text-decoration: underline;
+      }
+      .txt{
+        color: black;
+      }
+      .a{
+        color: black;
+        text-decoration: none;
+      }
+      .fa-solid{
+        margin-top: 1.5rem;
+        
+      }
+      .fa-solid:hover{
+        color: red;
+      }
+      
+
+
+      
+    .site-footer
+    {
+      background-color:#26272b;
+      padding:45px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#737373;
+    }
+    .site-footer hr
+    {
+      border-top-color:#bbb;
+      opacity:0.5
+    }
+    .site-footer hr.small
+    {
+      margin:20px 0
+    }
+    .site-footer h6
+    {
+      color:#fff;
+      font-size:16px;
+      text-transform:uppercase;
+      margin-top:5px;
+      letter-spacing:2px
+    }
+    .site-footer a
+    {
+      color:#737373;
+    }
+    .site-footer a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links
+    {
+      padding-left:0;
+      list-style:none
+      
+    }
+    .footer-links li
+    {
+      display:block
+    
+    }
+    .footer-links a
+    {
+      color:#737373
+    }
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+    {
+      color:white;
+      text-decoration:none;
+    }
+    .footer-links.inline li
+    {
+      display:inline-block
+    }
+    .site-footer .social-icons
+    {
+      text-align:right
+    }
+    .site-footer .social-icons a
+    {
+      width:40px;
+      height:40px;
+      line-height:40px;
+      margin-left:6px;
+      margin-right:0;
+      border-radius:100%;
+      background-color:#33353d
+    }
+    .copyright-text
+    {
+      margin:0
+    }
+    @media (max-width:991px)
+    {
+      .site-footer [class^=col-]
+      {
+        margin-bottom:30px
+      }
+    }
+    @media (max-width:767px)
+    {
+      .site-footer
+      {
+        padding-bottom:0
+      }
+      .site-footer .copyright-text,.site-footer .social-icons
+      {
+        text-align:center
+      }
+    }
+    .social-icons
+    {
+      padding-left:0;
+      margin-bottom:0;
+      list-style:none
+    }
+    .social-icons li
+    {
+      display:inline-block;
+      margin-bottom:4px
+    }
+    .social-icons li.title
+    {
+      margin-right:15px;
+      text-transform:uppercase;
+      color:#96a2b2;
+      font-weight:700;
+      font-size:13px
+    }
+    .social-icons a{
+      background-color:#eceeef;
+      color:#818a91;
+      font-size:16px;
+      display:inline-block;
+      line-height:44px;
+      width:44px;
+      height:44px;
+      text-align:center;
+      margin-right:8px;
+      border-radius:100%;
+      -webkit-transition:all .2s linear;
+      -o-transition:all .2s linear;
+      transition:all .2s linear
+    }
+    .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+    {
+      color:#fff;
+      background-color:#29aafe
+    }
+    .social-icons.size-sm a
+    {
+      line-height:34px;
+      height:34px;
+      width:34px;
+      font-size:14px
+    }
+    .social-icons a.facebook:hover
+    {
+      background-color:#3b5998
+    }
+    .social-icons a.twitter:hover
+    {
+      background-color:#00aced
+    }
+    .social-icons a.linkedin:hover
+    {
+      background-color:#007bb6
+    }
+    .social-icons a.dribbble:hover
+    {
+      background-color:#ea4c89
+    }
+    @media (max-width:767px)
+    {
+      .social-icons li.title
+      {
+        display:block;
+        margin-right:0;
+        font-weight:600
+      }
+    }
+    .links{
+        text-decoration: none;
+      }
+      
+    
+
+    
+
+
+  </style>
+  <body>
+   
+<div class="head-nav" style="width: 100%;">
+      <marquee class="Announcement_bar" behavior="" direction="left"> FREE WORLDWIDE SHIPPING & RETURNS</marquee>
+
+    </div>
+    <div class="nav-bar">
+        <div class="logos">
+            <img class="logo" src="./watch-logo.webp" alt="">
+        </div>    
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search for product,brand,type and more..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <div class="options">
+            <!-- <a  class="o" href="#" style="color: black;">STORE</a>
+            <a  class="o" href="#" style="color: black;">CONTACT</a> -->
+            <ul class="nav-item dropdown">
+              <a class="nav-link "   data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'signup' %}">signup</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="{% url 'user_login' %}">Login</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="{% url 'user_logout' %}">Logout</a></li>
+              </ul>
+            </ul>
+          
+            <!-- <a  class="o" href="{% url 'signup' %}" style="color: black;">LOGIN</a> -->
+            {% if user.is_authenticated %}
+            <h1>{{user}}</h1>
+            {% else %}
+            <h3>visitor</h3>
+            {% endif %}            
+        </div>
+    </div>
+    <hr>
+    <div class=" container-fluid sub-nav">
+      <div class=" spans">
+        <a href="{% url 'home' %}" style="text-decoration: none;"><span class="a pmen">HOME</span></a>
+          <a href="" style="text-decoration: none;"><span class="a pmen">MEN</span></a>
+          <a href="" style="text-decoration: none;"><span class="a pwomen">WOMEN</span></a>
+          <a href="" style="text-decoration: none;"><span class="a pspecial">PREMIUM WATCHES</span></a>
+          <a href="" style="text-decoration: none;"><span class="a psale" style="color: red;">SALE</span></a>
+          <a href="{% url 'all' %}" style="text-decoration: none;"><span class="a pmen">ALL WATCHES</span></a>
+  
+        
+
+        <a href="">
+          <span class=" a icon material-symbols-rounded">
+          shopping_cart
+          </span>
+        </a>
+          
+      </div>
+  </div>
+
+
+
+
+    <div class="container m-1">
+        <section class="py-5">
+            <div class="container">
+              <div class="row gx-5">
+                <aside class="col-lg-6">
+                  <div class=" justify-content-center">
+
+                      <img  class="w-50" src="{{data.image.url}}" />
+
+                  </div>
+
+                  <!-- thumbs-wrap.// -->
+                  <!-- gallery-wrap .end// -->
+                </aside>
+                <main class="col-lg-6">
+                  <div class="ps-lg-3">
+                    <h4 class="title text-dark">
+                     {{data.name}}
+                    </h4>
+                    <div class="d-flex flex-row my-3">
+                      <div class="text-warning mb-1 me-2">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="ms-1">
+                          4.5
+                        </span>
+                      </div>
+                      <!-- <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+                      <span class="text-success ms-2">In stock</span> -->
+                    </div>
+          
+                    <div class="mb-3">
+                      <span class="h5">{{data.price}}</span>
+                      <span class="text-muted">/per item</span>
+                    </div>
+          
+                    <p>
+                      Modern look and quality demo item is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black and brown clothing low-top shirts for
+                      men.
+                    </p>
+          
+                    <div class="row">
+                      <dt class="col-3">Type:</dt>
+                      <dd class="col-9">Regular</dd>
+          
+                      <dt class="col-3">Color</dt>
+                      <dd class="col-9">Brown</dd>
+          
+                      <dt class="col-3">Material</dt>
+                      <dd class="col-9">Cotton, Jeans</dd>
+          
+                      <dt class="col-3">Brand</dt>
+                      <dd class="col-9">Reebook</dd>
+                    </div>
+          
+                    <hr />
+<!--           
+                    <div class="row mb-4">
+                      <div class="col-md-4 col-6">
+                        <label class="mb-2">Size</label>
+                        <select class="form-select border border-secondary" style="height: 35px;">
+                          <option>Small</option>
+                          <option>Medium</option>
+                          <option>Large</option>
+                        </select>
+                      </div> -->
+                      <!-- col.// -->
+                      <!-- <div class="col-md-4 col-6 mb-3">
+                        <label class="mb-2 d-block">Quantity</label>
+                        <div class="input-group mb-3" style="width: 170px;">
+                          <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input type="text" class="form-control text-center border border-secondary" placeholder="14" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                          <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!-- <a href="#" class="btn btn-warning shadow-0"> Buy now </a> -->
+                    <a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
+  
+                  </div>
+                </main>
+              </div>
+            </div>
+          </section>
+    </div>
+
+
+
+
+    <footer class="site-footer mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Watch.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Brands</h6>
+              <ul class="footer-links">
+                <li><a class="links" href="http://scanfcode.com/category/c-language/">Casio</a></li>
+                <li><a class="links" href="http://scanfcode.com/category/front-end-development/">G-SHOCK</a></li>
+                <li><a class="links" href="http://scanfcode.com/category/back-end-development/">Titan</a></li>
+                <li><a class="links" href="http://scanfcode.com/category/java-programming-language/">Fossil</a></li>
+                <li><a class="links" href="http://scanfcode.com/category/android/">Rolex</a></li>
+                <li><a class="links" href="http://scanfcode.com/category/templates/">Richard Milie</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links" >
+                <li><a class="links" href="">About Us</a></li>
+                <li><a class="links" href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li><a class="links" href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                <li><a class="links" href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a class="links" href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+           <a class="links" href="#">Watch</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>    
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
