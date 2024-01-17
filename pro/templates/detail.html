@@ -86,7 +86,7 @@
       }
       
       .a:hover{
-          text-decoration: underline;
+        opacity: 50%;
       }
       .txt{
         color: black;
@@ -274,11 +274,12 @@
     .links{
         text-decoration: none;
       }
-      
-    
+  .d-flex{
+    margin-left: 35rem;
+  }
+  
 
-    
-
+       
 
   </style>
   <body>
@@ -288,9 +289,9 @@
 
     </div>
     <div class="nav-bar">
-        <div class="logos">
+        <!-- <div class="logos">
             <img class="logo" src="./watch-logo.webp" alt="">
-        </div>    
+        </div>     -->
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search for product,brand,type and more..." aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -342,14 +343,14 @@
 
 
 
-    <div class="container m-1">
+    <div class="container m-5">
         <section class="py-5">
             <div class="container">
               <div class="row gx-5">
                 <aside class="col-lg-6">
                   <div class=" justify-content-center">
 
-                      <img  class="w-50" src="{{data.image.url}}" />
+                      <img  class="w-100" src="{{data.image.url}}" />
 
                   </div>
 

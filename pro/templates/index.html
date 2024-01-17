@@ -87,7 +87,7 @@
   }
   
   .a:hover{
-      text-decoration: underline;
+      opacity: 50%;
   }
   .cvr-img2 img{
       width: 100%;
@@ -297,6 +297,9 @@
 .fa-solid:hover{
   color: red;
 }
+.d-flex{
+ margin-left: 35rem;
+}
 
 
 
@@ -313,9 +316,9 @@
 
     </div>
     <div class="nav-bar">
-        <div class="logos">
+        <!-- <div class="logos">
             <img class="logo" src="./watch-logo.webp" alt="">
-        </div>    
+        </div>     -->
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search for product,brand,type and more..." aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -347,10 +350,10 @@
     <div class=" container-fluid sub-nav">
       <div class=" spans">
         <a href="{% url 'home' %}" style="text-decoration: none;"><span class="a pmen">HOME</span></a>
-          <a href="" style="text-decoration: none;"><span class="a pmen">MEN</span></a>
-          <a href="" style="text-decoration: none;"><span class="a pwomen">WOMEN</span></a>
-          <a href="" style="text-decoration: none;"><span class="a pspecial">PREMIUM WATCHES</span></a>
-          <a href="" style="text-decoration: none;"><span class="a psale" style="color: red;">SALE</span></a>
+          <a href="" style="text-decoration: none;"><span class="a ">MEN</span></a>
+          <a href="" style="text-decoration: none;"><span class="a ">WOMEN</span></a>
+          <a href="" style="text-decoration: none;"><span class="a ">PREMIUM WATCHES</span></a>
+          <a href="" style="text-decoration: none;"><span class="a " style="color: red;">SALE</span></a>
           <a href="{% url 'all' %}" style="text-decoration: none;"><span class="a pmen">ALL WATCHES</span></a>
   
         
