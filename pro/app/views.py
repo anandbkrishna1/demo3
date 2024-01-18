@@ -6,7 +6,6 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.models import User
 from .models import Watch
-from .forms import WatchForm
 from app.forms import*
 
 # from app.form import*

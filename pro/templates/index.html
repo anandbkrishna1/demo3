@@ -13,27 +13,33 @@
 
   </head>
   <style>
-    main{
-      height: 100svh;
-      width: 100vw;
-  }
+   .body{
+    height: 100vh;
+    width: 100vw;
+   }
   .head-nav{
       width: 100vw;
       height: 3vh;
       background-color: black;
+      margin: 0%;
+      padding: 0%;
       /* display: flex; */
       /* color: white; */
       
   }
   .Announcement_bar{
+    width: 100vw;
       color: white;
       align-items: center;
       /* margin-right: 50px; */
+      margin: 0%;
+      padding: 0%;
   }
   .nav-bar{
       display: flex;
       justify-content: space-between; 
-      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
       width: 100vw;
       height: 55px;
       background-color: white;
@@ -51,7 +57,7 @@
   }
   .o{
       margin-top: 20px;
-      margin-right: 3rem; 
+      
   }
   .o:hover{
       color: red;
@@ -59,18 +65,19 @@
   
   .d-flex{
       margin-top: 18px;
-      margin-left: 5rem;
+      
   }
   .form-control{
-      width: 650px;
+      width: 600px;
   }
   .sub-nav{
-      position: relative;
       display: flex;
       width: 100vw;
       height: 70px;
       /* background-color: aqua; */
       align-items: center ;
+      margin: 0%; 
+      padding: 0%;
   }
   .spans{
       display: flex;
@@ -315,10 +322,10 @@
       <marquee class="Announcement_bar" behavior="" direction="left"> FREE WORLDWIDE SHIPPING & RETURNS</marquee>
 
     </div>
-    <div class="nav-bar">
+     <div class="nav-bar">
         <!-- <div class="logos">
             <img class="logo" src="./watch-logo.webp" alt="">
-        </div>     -->
+        </div>      -->
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search for product,brand,type and more..." aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -345,7 +352,7 @@
             <h3>visitor</h3>
             {% endif %}            
         </div>
-    </div>
+    </div> 
     <hr>
     <div class=" container-fluid sub-nav">
       <div class=" spans">
@@ -366,7 +373,7 @@
           
       </div>
   </div>
-   <div class="cvr-img2">
+  
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -398,7 +405,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-  </div>
+
   <div class="container">
     <div class="row" style="margin-top: 2rem;">
       
@@ -424,7 +431,7 @@
         {% endfor %}
       </div>
   </div>
-</div>
+
  
 
   <div class="cvr-img" style="margin-top: 2rem;">
