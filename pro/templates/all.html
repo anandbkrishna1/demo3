@@ -18,7 +18,7 @@
     width: 100vw;
 }
 .head-nav{
-    width: 100vw;
+    
     height: 3vh;
     background-color: black;
     /* display: flex; */
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between; 
     box-sizing: border-box;
-    width: 100vw;
+   
     height: 55px;
     background-color: white;
     align-items: center;
@@ -67,7 +67,7 @@
 .sub-nav{
     position: relative;
     display: flex;
-    width: 100vw;
+    
     height: 70px;
     /* background-color: aqua; */
     align-items: center ;
@@ -292,6 +292,11 @@
   margin-left: 35rem;
  }
   
+ .fa-solid:hover{
+  opacity: 50%;
+}
+
+
 </style>
   <body>
   
@@ -366,7 +371,7 @@
                       <h5 class="card-title txt"  id="brand" name="brand">{{i.brand}}</h5>
                       <h5 class="card-title txt"  id="name" name="name">{{i.name}}</h5>
                       <p  class="txt"  style="font-size: smaller;">MRP</p>
-                      <p class="card-text txt"  id="price" name="price">{{i.price}}</p>
+                      <p class="card-text txt"  id="price" name="price">₹ {{i.price}}</p>
                       <!-- <a href="https://m.imdb.com/title/tt1055369/?ref_=tt_sims_tt_i_1" class="btn btn-outline-danger">ADD TO CART</a>
                       <a href="https://m.imdb.com/title/tt1055369/?ref_=tt_sims_tt_i_1" class="btn btn-outline-warning">BUY NOW</a> -->
                     </div>

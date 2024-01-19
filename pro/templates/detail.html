@@ -17,7 +17,7 @@
         width: 100vw;
     }
     .head-nav{
-        width: 100vw;
+        
         height: 3vh;
         background-color: black;
         /* display: flex; */
@@ -33,7 +33,7 @@
         display: flex;
         justify-content: space-between; 
         box-sizing: border-box;
-        width: 100vw;
+        
         height: 55px;
         background-color: white;
         align-items: center;
@@ -66,7 +66,7 @@
     .sub-nav{
         position: relative;
         display: flex;
-        width: 100vw;
+        
         height: 70px;
         /* background-color: aqua; */
         align-items: center ;
@@ -277,9 +277,12 @@
   .d-flex{
     margin-left: 35rem;
   }
+  .fa-solid:hover{
+    opacity: 50%;
+  }
   
 
-       
+    
 
   </style>
   <body>
@@ -343,125 +346,125 @@
 
 
 
-    <div class="container m-5 " style="align-items: center;">
-        <section class="py-5">
-            <div class="container ">
-              <div class="row lg-5">
-                <aside class="col-lg-7" >
-                  <div class="p-5">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        
-              
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="{{data.image.url}}" class="d-block w-75" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="{{data.image.url}}" class="d-block w-75" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="{{data.image.url}}" class="d-block w-75" alt="...">
-                        </div>
-                        
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                      <!-- <img  class="w-75" src="{{data.image.url}}" /> -->
-
+<div class="container m-5 " >
+    <section class="py-5">
+        <div class="container ">
+          <div class="row lg-5">
+            <aside class="col-lg-7" >
+              <div class="p-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    
+          
                   </div>
-
-                  <!-- thumbs-wrap.// -->
-                  <!-- gallery-wrap .end// -->
-                </aside>
-                <main class="col-lg-5">
-                  <div class="ps-lg-3">
-                    <h4 class="title text-dark">
-                     {{data.name}}
-                    </h4>
-                    <div class="d-flex flex-row my-3">
-                      <div class="text-warning mb-1 me-2">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <span class="ms-1">
-                          4.5
-                        </span>
-                      </div>
-                      <!-- <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
-                      <span class="text-success ms-2">In stock</span> -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="{{data.image.url}}" class="d-block w-75" alt="...">
                     </div>
-          
-                    <div class="mb-3">
-                      <span class="h5">{{data.price}}</span>
-                      <span class="text-muted">/per item</span>
+                    <div class="carousel-item">
+                      <img src="{{data.image.url}}" class="d-block w-75" alt="...">
                     </div>
-          
-                    <p>
-                      Modern look and quality demo item is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black and brown clothing low-top shirts for
-                      men.
-                    </p>
-          
-                    <div class="row">
-                      
-          
-                      <dt class="col-3">Color</dt>
-                      <dd class="col-9">Brown</dd>
-          
-                      <dt class="col-3">Material</dt>
-                      <dd class="col-9">Cotton, Jeans</dd>
-          
-                      <dt class="col-3">Brand</dt>
-                      <dd class="col-9">{{data.brand}}</dd>
+                    <div class="carousel-item">
+                      <img src="{{data.image.url}}" class="d-block w-75" alt="...">
                     </div>
-          
-                    <hr />
-<!--           
-                    <div class="row mb-4">
-                      <div class="col-md-4 col-6">
-                        <label class="mb-2">Size</label>
-                        <select class="form-select border border-secondary" style="height: 35px;">
-                          <option>Small</option>
-                          <option>Medium</option>
-                          <option>Large</option>
-                        </select>
-                      </div> -->
-                      <!-- col.// -->
-                      <!-- <div class="col-md-4 col-6 mb-3">
-                        <label class="mb-2 d-block">Quantity</label>
-                        <div class="input-group mb-3" style="width: 170px;">
-                          <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
-                            <i class="fas fa-minus"></i>
-                          </button>
-                          <input type="text" class="form-control text-center border border-secondary" placeholder="14" aria-label="Example text with button addon" aria-describedby="button-addon1" />
-                          <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon2" data-mdb-ripple-color="dark">
-                            <i class="fas fa-plus"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div> -->
-                    <!-- <a href="#" class="btn btn-warning shadow-0"> Buy now </a> -->
-                    <a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
-  
+                    
                   </div>
-                </main>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                  <!-- <img  class="w-75" src="{{data.image.url}}" /> -->
+
               </div>
-            </div>
-          </section>
-    </div>
+
+              <!-- thumbs-wrap.// -->
+              <!-- gallery-wrap .end// -->
+            </aside>
+            <main class="col-lg-5">
+              <div class="ps-lg-3">
+                <h4 class="title text-dark">
+                  {{data.name}}
+                </h4>
+                <div class="d-flex flex-row my-3">
+                  <div class="text-warning mb-1 me-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="ms-1">
+                      4.5
+                    </span>
+                  </div>
+                  <!-- <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+                  <span class="text-success ms-2">In stock</span> -->
+                </div>
+      
+                <div class="mb-3">
+                  <span class="h5">₹ {{data.price}}</span>
+                  <span class="text-muted">/per item</span>
+                </div>
+      
+                <p>
+                  Modern look and quality demo item is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black and brown clothing low-top shirts for
+                  men.
+                </p>
+      
+                <div class="row">
+                  
+      
+                  <dt class="col-3">Color</dt>
+                  <dd class="col-9">Brown</dd>
+      
+                  <dt class="col-3">Material</dt>
+                  <dd class="col-9">Cotton, Jeans</dd>
+      
+                  <dt class="col-3">Brand</dt>
+                  <dd class="col-9">{{data.brand}}</dd>
+                </div>
+      
+                <hr />
+<!--           
+                <div class="row mb-4">
+                  <div class="col-md-4 col-6">
+                    <label class="mb-2">Size</label>
+                    <select class="form-select border border-secondary" style="height: 35px;">
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div> -->
+                  <!-- col.// -->
+                  <!-- <div class="col-md-4 col-6 mb-3">
+                    <label class="mb-2 d-block">Quantity</label>
+                    <div class="input-group mb-3" style="width: 170px;">
+                      <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <input type="text" class="form-control text-center border border-secondary" placeholder="14" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                      <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <a href="#" class="btn btn-warning shadow-0"> Buy now </a> -->
+                <a href="{% url 'add_to_cart' data.id %}" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
+
+              </div>
+            </main>
+          </div>
+        </div>
+      </section>
+</div>
 
 
 
